@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krsnaa Portfolio</title>
+    <link rel="icon" href="gambar/kucingzilong.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="bar-menu" aria-label="Sidebar navigasi" role="navigation">
+        <ul>
+            <hr>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="sidebar-contact" align="center">
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:kresnaaji793@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+        </p>
+        <p>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/kresna-aji-wicaksono-a99a3838b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+        <p>
+            <i class="fa-brands fa-github"></i>
+            <a href="http://github.com/krysnaaaw" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+        <p>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://instagram.com/krysnaa._" target="_blank" rel="noopener noreferrer">@krysnaa._</a>
+        </p>
+    </div>
+    </nav>
+
+    <header class="header" role="banner">
+        <h2 id="home-title">クレスナ</h2>
+        <button id="menuToggle" aria-label="Toggle sidebar menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <!-- Home Section -->
+    <section class="vhh bghome fade" id="home" tabindex="-1" aria-labelledby="home-title">
+        <div class="home-content">
+            <h1>Halo, Saya Kresna!</h1>
+            <p>Web Developer & Data Engineer</p>
+            <a href="#projects" class="btn-cta">Lihat Proyekku</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="vhh about fade" id="about" aria-labelledby="about-title">
+        <h2 class="section-title" id="about-title">About Me</h2>
+        <div class="about-content">
+            <img src="gambar/ogut12239.jpg" alt="Foto Kresna" class="profile-pic">
+            <div class="about-text">
+                <p>Saya adalah siswa SMKN 1 Jakarta dengan jurusan Sistem Informasi Jaringan dan Aplikasi.</p>
+                <p>Selama belajar di jurusan ini, saya memiliki pengalaman membuat website statis, program sederhana menggunakan Python dan C++, serta game sederhana menggunakan JavaScript. Selain itu, saya terbiasa bekerja dengan Linux, termasuk konfigurasi DHCP dan FTP, instalasi Debian, dan pengembangan rangkaian IoT.</p>
+                <p>Saya berambisi menjadi Data Engineer yang mampu membangun sistem efisien dan menganalisis data untuk mendukung keputusan bisnis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="vhh projects fade" id="projects" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card" aria-labelledby="p1-title">
+                <img src="gambar/tokostatis.png" alt="Tampilan Website Toko Statis">
+                <h3 id="p1-title">Website Toko Online Statis</h3>
+                <p>Dibuat menggunakan HTML dan CSS, bertujuan untuk mempraktikkan struktur halaman dan tata letak.</p>
+                <p>(Belum Responsive)</p>
+                <a href="/Project/Semester 1/warkop2.html" target="_blank" rel="noopener noreferrer">Lihat</a>
+            </article>
+
+            <article class="project-card" aria-labelledby="p2-title">
+                <img src="gambar/gameburung.png" alt="Tampilan Game Flappy Bird">
+                <h3 id="p2-title">Game Flappy Bird</h3>
+                <p>Dibuat menggunakan HTML, CSS, dan JavaScript, menekankan logika game, animasi, dan interaksi pengguna.</p>
+                <p>(Belum Responsive)</p>
+                <a href="/Project/game/index.html" target="_blank" rel="noopener noreferrer">Lihat</a>
+            </article>
+
+            <article class="project-card" aria-labelledby="p3-title">
+                <img src="gambar/tokobuku.png" alt="Tampilan Website Toko Buku">
+                <h3 id="p3-title">Website Toko Online Dinamis</h3>
+                <p>Dalam Pengembangan</p>
+                <p>(Coming Soon)</p>
+                <a href="/Project/tokobuku/index.html" target="_blank" rel="noopener noreferrer">Lihat</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section class="vhh skills fade" id="skills" aria-labelledby="skills-title">
+        <h2 class="section-title" id="skills-title">Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <img src="gambar/c++.png" alt="C++ logo">
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--skill-width:45%" data-width="45%"></div></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <img src="gambar/canva.png" alt="Canva logo">
+                    <h3>Canva</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--skill-width:65%" data-width="65%"></div></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <img src="gambar/javascript.png" alt="JavaScript logo">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--skill-width:25%" data-width="25%"></div></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <img src="gambar/python.png" alt="Python logo">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--skill-width:49%" data-width="49%"></div></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <img src="gambar/debian.webp" alt="Debian logo">
+                    <h3>Linux Debian</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--skill-width:50%" data-width="50%"></div></div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <img src="gambar/figma.png" alt="Figma logo">
+                    <h3>Figma</h3>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--skill-width:15%" data-width="15%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="vhh experience fade" id="experience" aria-labelledby="experience-title">
+        <h2 class="section-title" id="experience-title">Experience & Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>SMK Negeri 1 Jakarta</h3>
+                <span>2024 - Sekarang</span>
+                <p>Pendidikan formal di bidang Jaringan dan Pengembangan Web.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Samsung Innovation Campus Batch 7 - Dibimbing ID</h3>
+                <span>Agustus 2025 - Sekarang</span>
+                <p>Pelatihan dasar Python dan IoT.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="vhh contact fade" id="contact" aria-labelledby="contact-title">
+        <h2 class="section-title" id="contact-title">Contact</h2>
+        <div class="contact-content">
+            <form action="mailto:krsnaa@example.com" method="post" class="contact-form" aria-label="Form kontak">
+                <input type="text" name="name" placeholder="Nama" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <p>&copy; 2025 Kresna. All rights reserved.</p>
+</footer>
+</body>
+</html>
