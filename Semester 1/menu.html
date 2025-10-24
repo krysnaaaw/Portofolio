@@ -1,0 +1,245 @@
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Waroeng Kopi</title>
+        <link rel="stylesheet" href="warkop2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Caveat:wght@400..700&
+                family=Dancing+Script:wght@400..700&family=Poppins:wght@400;700&family=Great+Vibes&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" 
+                integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" 
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="warkop.js"></script>
+    </head>
+    <body>
+
+        <div id="des-menu-muncul" class="des-menu muncul">
+            <div class="des-content">
+                <button class="tutup-des" onclick="toggleDes()">✖</button>
+                <h2>Tomahawk Steak</h2>
+                <div style="display: flex;">
+                    <img src="gambar/tomahawk steak.jpg" width="250px" style="padding-right: 20;">
+                    <p>Daging tomahawk, dikenal juga sebagai tomahawk steak, adalah jenis potongan daging sapi yang terkenal karena bentuknya 
+                        yang unik. Potongan ini berasal dari tulang rusuk sapi yang panjang, dengan sebuah tulang yang tetap melekat pada 
+                        potongan dagingnya. Bentuknya mirip dengan kapak, tomahawk yang digunakan oleh suku Indian Amerika.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart muncul">
+                <button class="tutup-cart" onclick="toggleCart()">✖</button>
+                <h2>Keranjang Kamu</h2>
+                <ul id="isi-cart"></ul>
+                <p class="total">Total Harga: <span id="total-harga">Rp 0</span></p>
+                <button class="checkout" onclick="checkout()">Checkout</button>
+        </div>
+
+        <div id="info-form" class="infoform">
+            <h2>Isi Data Diri Anda</h2>
+            <form id="form-data-diri">
+            <div class="input-container">
+                <label for="name"><i class="fa-solid fa-user"></i> Nama Lengkap:</label>
+                <input type="text" id="name" required placeholder="Masukkan nama lengkap">
+            </div>
+            <div class="input-container">
+                <label for="address"><i class="fa-solid fa-house"></i> Alamat:</label>
+                <input type="text" id="address" required placeholder="Masukkan alamat lengkap"></textarea>
+            </div>
+            <div class="input-container">
+                <label for="phone"><i class="fa-solid fa-phone"></i> Nomor Telepon:</label>
+                <input type="text" id="phone" required placeholder="Masukkan nomor telepon">
+            </div>
+            <button type="submit" id="buttonform" onclick="terkirim()">Kirim</button>
+            </form>
+        </div>
+
+
+        <div id="thank-you-message">
+            <div id="thank-you-message-content" class="thank-you-message-content">
+                <h2>Terima Kasih!</h2>
+                <p>Pesanan Anda telah kami proses. Kami akan segera menghubungi anda melalui WhatsApp untuk melanjutkan pembayaran</p>
+            </div>
+        </div>
+
+        <div id="custom-alert" class="custom-alert hidden">
+            <div class="alert-content">
+            <h2>Keranjang Anda Kosong</h2>
+            <p>Silakan tambahkan beberapa item ke keranjang Anda sebelum melanjutkan ke checkout.</p>
+            <button onclick="closeAlert()">Kembali ke Menu</button>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <div class="kepala">
+            <div class="namashop">
+                Kopi CaKz
+            </div>
+            <div class="menubar">
+                <a class="abar" href="warkop2.html">HOME</a>
+                <a class="abar" href="menu.html">MENU</a>
+                <button class="cart-toggle" onclick="toggleCart()">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span id="jumlah-cart">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- VH1 -->
+        <div class="qq header">
+            <div class="judul1">
+                <h1 align="center" style="font-size: 4em;">Menu</h1>
+                <p align="center" style="font-size: large; color: gray;">Far far away, behind the word mountains, far from the countries Vokalia and<br/>
+                    Consonantia, there live the blind texts.</p>
+            </div>
+        </div>
+
+        <!-- VH2 -->
+        <div class="menuvh2">
+            <div class="menumakanan">
+                <p class="tipemenu"> Main Dish</p>
+                <p class="infolistmenu">Far far away, behind the word mountains, far from the countries Vokalia and<br/>
+                    Consonantia, there live the blind texts.</p>
+                    
+                <div class="baris pertama">
+                    <div class="kotakmenu">
+                        <img src="gambar/tomahawk steak.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Tomahawk Steak</p>
+                        <p align="center" class="infomakanan" onclick="addDes()">jenis potongan daging sapi yang <br/>terkenal karena bentuknya yang unik</p>
+                        <p align="center" class="hargamakanan">Rp90.000</p>
+                        <button onclick="addToCart('Tomahawk Steak', 90000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/Apricot Glazed Cornish Hen Recipe.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Cornish Glazed</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp86.000</p>
+                        <button onclick="addToCart('Cornish Glazed', 86000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/Truffled mushroom soup with cheesy croutes recipe _ Sainsbury`s Magazine.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Mushroom Soup</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp54.000</p>
+                        <button onclick="addToCart('Mushroom Soup', 54000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/Dhaba Style Chicken Curry.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Chicken Curry</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp60.000</p>
+                        <button onclick="addToCart('Chicken Curry', 60000)">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menuminuman">
+                <p class="tipemenu"> Drink</p>
+                <p class="infolistmenu">Far far away, behind the word mountains, far from the countries Vokalia and<br/>
+                    Consonantia, there live the blind texts.</p>
+                <div class="baris pertama">
+                    <div class="kotakmenu">
+                        <img src="gambar/lattee.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan"><i class="fa-solid fa-star" style="color: #C5A06E;"></i> Latte</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp25.000</p>
+                        <button onclick="addToCart('Kopi Latte', 25000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/Mocha recipe.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Mocha</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp40.000</p>
+                        <button onclick="addToCart('Kopi Mocha', 40000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/pin1.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan"><i class="fa-solid fa-star" style="color: #C5A06E;"></i> Kopi Susu</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp35.000</p>
+                        <button onclick="addToCart('Kopi Susu', 35000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/machiato.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Machiato</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp30.000</p>
+                        <button onclick="addToCart('Machiato', 30000)">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="baris kedua">
+                    <div class="kotakmenu">
+                        <img src="gambar/kopiireng.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan"><i class="fa-solid fa-star" style="color: #C5A06E;"></i> Kopi Timothy Ronald</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp80.000</p>
+                        <button onclick="addToCart('Kopi Timothy Ronald', 80000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/010646301747e2a765574b2415049621.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Frapper</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp50.000</p>
+                        <button onclick="addToCart('Frapper', 50000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/cappucino.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan">Cappucino</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp45.000</p>
+                        <button onclick="addToCart('Cappucino', 45000)">Add To Cart</button>
+                    </div>
+                    <div class="kotakmenu">
+                        <img src="gambar/freakshake.jpg" class="gambarmenu">
+                        <p align="center" class="namamakanan"><i class="fa-solid fa-star" style="color: #C5A06E;"></i> Freak Shake</p>
+                        <p align="center" class="infomakanan">basic coffe with coffe powder <br/>in top</p>
+                        <p align="center" class="hargamakanan">Rp35.000</p>
+                        <button onclick="addToCart('Freak Shake', 35000)">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="isi3">
+        <h1 align="center">Tentang Kami</h1>
+        <div class="deskripsibawah">
+            <div class="company">
+                <h4 style="font-size: xx-large; font-family: bokor;">Kopi CaKz</h4>
+                <p>Jl. Budi Utomo No. 7,
+                    Kel. Pasar Baru 
+                    Kec. Sawah Besar 
+                    Jakarta Pusat 10710</p>
+            </div>
+            <div style="padding: 0 50;">
+                <h4 style="font-size: xx-large; font-family: bokor;">Sosial Media</h4>
+                <a class="sosmed" href="https://www.instagram.com/krysnaa._/"><h3 class="fa-brands fa-instagram"></h3> kopi_CaKz</a><br/>
+                <a class="sosmed" href="https://www.instagram.com/krysnaa._/"><h3 class="fa-brands fa-facebook"></h3> kopiCaKz</a><br/>
+                <a class="sosmed" href="https://www.instagram.com/krysnaa._/"><h3 class="fa-brands fa-tiktok"></h3> kopi CaKz</a>
+            </div>
+            <div style="flex-wrap: wrap; max-width: 550; padding: 0 50;">
+                <h4 style="font-size: xx-large; font-family: bokor;">Partner</h4>
+                <img src="gambar/partner1.png" class="logopartner">
+                <img src="gambar/partner2.png" class="logopartner">
+                <img src="gambar/partner3.png" class="logopartner">
+                <img src="gambar/partner4.png" class="logopartner">
+                <img src="gambar/partner5.png" class="logopartner">
+                <img src="gambar/partner1.png" class="logopartner">
+                <img src="gambar/partner2.png" class="logopartner">
+                <img src="gambar/partner3.png" class="logopartner">
+                <img src="gambar/partner4.png" class="logopartner">
+                <img src="gambar/partner5.png" class="logopartner">
+            </div>
+            <div>
+                <h4 style="font-size: xx-large; font-family: bokor;">Contact</h4>
+                <p><h3 class="fa-solid fa-phone"></h3> 08805000</p>
+                <p><h3 class="fa-solid fa-envelope"></h3> customercakz@gmail.com</p>
+            </div>
+        </div>
+    </div>  
+
+        <!-- FOOTER -->
+        <p class="bawahan" align="center">Copyright ©2024 All rights reserved | This template is made with @krysna._</p>
+    </body>
+    </html>

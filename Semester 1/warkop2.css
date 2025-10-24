@@ -1,0 +1,745 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkcolor: #4E3D32;
+    --color1: #1C0D0B; /*Dark Espresso (untuk kedalaman gelap)*/
+    --color2: #4B2E28; /*Rich Coffee Brown (untuk aksen teks dan elemen utama)*/
+    --color3: #3B1F18; /*Deep Mocha (untuk aksen dan latar belakang)*/
+    --color4: #7A4B3D; /*Cinnamon Brown (untuk aksen atau highlight)*/
+    --color5: #9E7B4F; /*Golden Caramel (untuk tombol atau elemen interaktif)*/
+    --color6: #D3B49B; /*Soft Beige (untuk teks dan kontras ringan)*/
+    --color7: #5F3A3A; /*Warm Chestnut (untuk garis dan border)*/
+}
+
+body {
+    color: white;
+    font-family: 'poppins',sans-serif;
+    padding-top: 8vh;
+    overflow-x: hidden;
+}
+
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HALAMAN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HOME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
+              url('gambar/wallhaven-w82y96.png') center/cover no-repeat;
+}
+
+.judul1 {
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    padding-top: 35vh;
+}
+
+.kepala {
+    background-color: var(--darkcolor);
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.namashop {
+    font-size: xx-large;
+    margin: 6 0 0 35;
+    font-family: bokor;
+}
+
+.menubar {
+    margin-top: 10;
+    margin-right: 35;
+}
+
+.abar {
+    margin: 0 10 0 10;
+    padding: 10;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.abar:hover {
+    background-color: var(--color5);
+    padding: 10;
+    border-radius: 5px;
+    transform: scale(1.1);
+    }
+
+.menubar button {
+    background: var(--darkcolor);
+    border: none;
+    padding: 10;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.menubar button:hover {
+    background: var(--color5);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTENT <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> BEST SELLER <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.isi1 {
+    background-color: black;
+    height: 102vh;
+    width: 100%;
+}
+
+.titlebest {
+    font-size: 3em;
+    padding-top: 65;
+    padding-bottom: 20;
+    font-family: serif;
+}
+
+.titlebest2 {
+    color: #A67B5B;
+    position: absolute;
+    padding: 0 780 0 960;
+    rotate: 45deg; 
+    font-family: caveat;
+    font-size: x-large;
+}
+
+.bestcoffe {
+    justify-content: center;
+    display: flex;
+}
+
+.kotakbest {
+    margin: 25;
+}
+
+.kopi {
+    height: 300;
+    width: 250;
+    margin-top: 30;
+}
+
+.namabest {
+    font-size: large;
+    margin-top: 20;
+    font-family: dancing script;
+}
+
+.infobest {
+    color: grey;
+    margin-top: 10;
+}
+
+.hargabest {
+    margin-top: 20;
+    margin-bottom: 35;
+    color: #B38C6C;
+    font-size: large;
+    font-family: serif;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> REVIEW CUSTOMER <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.isi2 {
+    background-color: rgb(0, 0, 0);
+    height: 70vh;
+    width: 100%;
+}
+
+.titlecomment {
+    color: #A67B5B;
+    position: absolute;
+    padding: 0 860 0 935;
+    rotate: 45deg;
+    font-family: great vibes;
+    font-size: x-large;
+}
+
+.judulcoment {
+    height: 13vh;
+    padding-top: 30;
+    font-family: serif;
+}
+
+.comentreview {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30;
+}
+
+.boxcomment {
+    width: 337;
+    padding: 25;
+}
+
+.ganjil {
+    background-color: #C5A06E;
+}
+
+.genap {
+    background-color: #ac8c60;
+}
+
+.ss {
+    margin-top: 150;
+}
+
+.dd {
+    margin-top: 110;
+}
+
+.tt {
+    margin-top: 130;
+}
+
+.ee {
+    margin-top: 160;
+}
+
+.ll {
+    margin-top: 100;
+}
+
+.n1 {
+    margin-top: 60;
+}
+
+.n2 {
+    margin-top: 28;
+}
+
+.n3 {
+    margin-top: 55;
+}
+
+.n4 {
+    margin-top: 50;
+}
+
+.n5 {
+    margin-top: 85;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> ABOUT US <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.isi3 {
+    height: 30vh;
+    background-color: black;
+}
+.deskripsibawah {
+    display: flex;
+    margin-top: 25;
+}
+
+.company {
+    padding: 0 50;
+    max-width: 280;
+}
+
+.sosmed {
+    text-decoration: none;
+    color: white;
+}
+
+.logopartner {
+    background-color: #ffffff;
+    height: 45;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.bawahan {
+    background-color: var(--darkcolor);
+    height: 12vh;
+    padding-top: 40;
+}
+
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HALAMAN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MENU <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.menuvh2 {
+    background-color: black;
+    width: 100%;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> LIST MENU <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.des-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+.des-content {
+    background: white;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 250px;
+    margin-left: 450px;
+}
+
+.des-content h2 {
+    position: fixed;
+    top: 32%;
+    right: 600px;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--color2);
+}
+  
+.des-content p {
+    font-size: 1em;
+    margin-top: 50;
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.tutup-des {
+    position: absolute;
+    top: 275px;
+    right: 475px;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.tutup-des:hover {
+    color: #ff3b30;
+}
+
+
+.tipemenu {
+    font-family: great vibes;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 60;
+    
+}
+
+.infolistmenu {
+    text-align: center;
+    font-size: small;
+    color: gray;
+    margin: 20 0;
+}
+
+.baris {
+    justify-content: center;
+    display: flex;
+}
+
+.kotakmenu {
+    margin: 25;
+    text-align: center;
+}
+
+.kotakmenu button {
+    background: linear-gradient(135deg, #9E7B4F, #7A4B3D);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kotakmenu button:hover {
+    background: linear-gradient(135deg, #7A4B3D, #9E7B4F);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.kotakmenu button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gambarmenu {
+    height: 300;
+    width: 250;
+}
+
+.namamakanan {
+    font-size: x-large;
+    margin-top: 10;
+    font-family: dancing script;
+}
+
+.infomakanan {
+    color:gray;
+    margin-top: 5;
+    font-size: small;
+}
+
+.hargamakanan {
+    margin-top: 10;
+    color: #C5A06E;
+    margin-bottom: 12;
+    font-size: large;
+    font-family: serif;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> KERANJANG MENU <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.cart {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    width: 350px;
+    height: 400px;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.cart.muncul {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.cart h2 {
+    font-family: serif;
+    text-align: center;
+    background: var(--darkcolor);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 -10px 1em;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.cart .total {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-family: serif;
+}
+
+.cart button.checkout {
+    background: var(--darkcolor);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.cart button.checkout:hover {
+    background: var(--color5);
+}
+
+.tutup-cart {
+    position: absolute;
+    top: 24px;
+    right: 25px;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+.tutup-cart:hover {
+    color: #ff3b30;
+}
+
+.cart-toggle {
+    position: relative;
+    font-size: 1.5em;
+}
+  
+.cart-toggle #jumlah-cart {
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    background: var(--color5);
+    color: white;
+    font-size: 0.6em;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px 8px;
+    min-width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.isi-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.nama-item {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.harga-item {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-quantity button {
+    background:var(--darkcolor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+  
+.item-quantity button:hover {
+    background:var(--color5);
+}
+  
+.item-quantity span {
+    font-weight: bold;
+    font-size: 1em;
+    min-width: 20px;
+    text-align: center;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.custom-alert.hidden {
+    display: none;
+}
+  
+.alert-content {
+    background: white;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+}
+  
+.alert-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--color2);
+}
+  
+.alert-content p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    color: #555;
+}
+  
+.alert-content button {
+    background-color: var(--darkcolor);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+.alert-content button:hover {
+    background-color: var(--color5);
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+
+.infoform {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.infoform h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    color: var(--color2);
+    font-weight: 700;
+  }
+  
+.input-container {
+    margin-bottom: 15px;
+    position: relative;
+}
+  
+.input-container label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.input-container input:focus {
+  outline: none;
+  border-color: #ff6f61;
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+.input-container input::placeholder {
+  color: #aaa;
+}
+  
+.infoform button {
+    background-color: var(--darkcolor);
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+  
+.infoform button:hover {
+    background-color: var(--color5);
+}
+
+.input-container {
+    position: relative;
+}
+
+.thank-you-message {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.thank-you-message-content {
+    top: 37%;
+    left: 38%;
+    position: fixed;
+    background: white;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+    display: none;
+}
+  
+.thank-you-message-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--color2);
+}
+  
+.thank-you-message-content p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    color: #555;
+}

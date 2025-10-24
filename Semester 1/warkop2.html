@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waroeng Kopi</title>
+    <link rel="stylesheet" href="warkop2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Caveat:wght@400..700&
+               family=Dancing+Script:wght@400..700&family=Poppins:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" 
+               integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" 
+               crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="warkop.js"></script>
+</head>
+<body>
+
+    <div class="cart muncul">
+        <button class="tutup-cart" onclick="toggleCart()">✖</button>
+        <h2>Keranjang Kamu</h2>
+        <ul id="isi-cart"></ul>
+        <p class="total">Total Harga: <span id="total-harga">Rp 0</span></p>
+        <button class="checkout" onclick="checkout()">Checkout</button>
+    </div>
+
+    <div id="info-form" class="infoform">
+        <h2>Isi Data Diri Anda</h2>
+        <form id="form-data-diri">
+          <div class="input-container">
+            <label for="name"><i class="fa-solid fa-user"></i> Nama Lengkap:</label>
+            <input type="text" id="name" required placeholder="Masukkan nama lengkap">
+          </div>
+          <div class="input-container">
+            <label for="address"><i class="fa-solid fa-house"></i> Alamat:</label>
+            <input type="text" id="address" required placeholder="Masukkan alamat lengkap"></textarea>
+          </div>
+          <div class="input-container">
+            <label for="phone"><i class="fa-solid fa-phone"></i> Nomor Telepon:</label>
+            <input type="text" id="phone" required placeholder="Masukkan nomor telepon">
+          </div>
+          <button type="submit" id="buttonform">Kirim</button>
+        </form>
+    </div>
+
+    <div id="custom-alert" class="custom-alert hidden">
+        <div class="alert-content">
+          <h2>Keranjang Anda Kosong</h2>
+          <p>Silakan tambahkan beberapa item ke keranjang Anda sebelum melanjutkan ke checkout.</p>
+          <button onclick="closeAlert()">Kembali ke Menu</button>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="kepala">
+        <div class="namashop">
+            Kopi CaKz
+        </div>
+        <div class="menubar">
+            <a class="abar" href="warkop2.html">HOME</a>
+            <a class="abar" href="menu.html">MENU</a>
+            <button class="cart-toggle" onclick="toggleCart()">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span id="jumlah-cart">0</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- VH GAMBAR -->
+    <div class="qq header">
+        <div class="judul1">
+            <h1 align="center" style="font-size: 4em;">Amazing Taste & <br/>Beautiful    Place</h1>
+            <p align="center" style="font-size: larger; color: gray ;">Menikmati kopi dengan melihat pemandangan pantai yang sangat indah </p>
+        </div>
+    </div>
+
+    <!-- VH ISI -->
+    <div class="qq isi1">
+        <div>
+            <p align="center" class="titlebest2">Coffe</p>
+            <h2 class="titlebest" align="center">Best Seller</h2>
+            <p align="center" style="color: grey;">Far far away, behind the word mountains, far from the countries Vokalia and<br/>
+                Consonantia, there live the blind texts.</p>
+        </div>
+        <div class="bestcoffe">
+            <div class="kotakbest">
+                <img src="gambar/kopiireng.jpg" class="kopi">
+                <p align="center" class="namabest">Kopi Timothy Ronald</p>
+                <p align="center" class="infobest">basic coffe with coffe powder <br/>in top</p>
+                <p align="center" class="hargabest">Rp80.000</p>                
+            </div>
+            <div class="kotakbest">
+                <img src="gambar/lattee.jpg" class="kopi">
+                <p align="center" class="namabest">Kopi Latte</p>
+                <p align="center" class="infobest">Basic latte with smooth <br/>texture</p>
+                <p align="center" class="hargabest">Rp25.000</p>
+            </div>
+            <div class="kotakbest">
+                <img src="gambar/pin1.jpg" class="kopi">
+                <p align="center" class="namabest">Kopi Susu</p>
+                <p align="center" class="infobest">Basic coffee with creamy <br/>milk</p>
+                <p align="center" class="hargabest">Rp35.000</p>
+            </div>
+            <div class="kotakbest">
+                <img src="gambar/freakshake.jpg" class="kopi">
+                <p align="center" class="namabest">Freak Shake</p>
+                <p align="center" class="infobest">basic coffe with coffe powder <br/>in top</p>
+                <p align="center"  class="hargabest">Rp35.000</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="isi2">
+        <p align="center" class="titlecomment">Testimony</p>
+            <h1 align="center" class="judulcoment">Review Customer</h1>
+            <p align="center" style="color: grey;">Far far away, behind the word mountains, far from the countries Vokalia and <br/>
+                Consonantia, there live the blind texts.</p>
+
+        <div class="comentreview">
+            <div class="boxcomment ganjil ss">
+                <p>“Even the all-powerful Pointing has no control about the blind textsit is an almost unorthographic life One day
+                     however a small.”</p>
+                <h4 class="namacustomer n1">Kemal Habibie Rahsan</h4>
+            </div>
+            <div class="boxcomment genap dd">
+                <p>“Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day 
+                    however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.”</p>
+                <h4 class="namacustomer n2">Sosuke Aizen</h4>
+            </div>
+            <div class="boxcomment ganjil tt">
+                <p>“Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day 
+                    however a small line of blind text by the name. ”</p>
+                <h4 class="namacustomer n3">Leila S Chudori</h4>
+            </div>
+            <div class="boxcomment genap ee">
+                <p>“Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day 
+                    however.”</p>
+                <h4 class="namacustomer n4">Tere Liye</h4>
+            </div>
+            <div class="boxcomment ganjil ll">
+                <p>“Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day 
+                    however a small line of blind text by the name. ”</p>
+                <h4 class="namacustomer n5">Pramoedya Ananta Toer</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="isi3">
+        <h1 align="center">Tentang Kami</h1>
+        <div class="deskripsibawah">
+            <div class="company">
+                <h4 style="font-size: xx-large; font-family: bokor;">Kopi CaKz</h4>
+                <p>Jl. Budi Utomo No. 7,
+                    Kel. Pasar Baru 
+                    Kec. Sawah Besar 
+                    Jakarta Pusat 10710</p>
+            </div>
+            <div style="padding: 0 50;">
+                <h4 style="font-size: xx-large; font-family: bokor;">Sosial Media</h4>
+                <a class="sosmed" href="https://www.instagram.com/krysnaa._/"><h3 class="fa-brands fa-instagram"></h3> kopi_CaKz</a><br/>
+                <a class="sosmed" href="https://www.instagram.com/krysnaa._/"><h3 class="fa-brands fa-facebook"></h3> kopiCaKz</a><br/>
+                <a class="sosmed" href="https://www.instagram.com/krysnaa._/"><h3 class="fa-brands fa-tiktok"></h3> kopi CaKz</a>
+            </div>
+            <div style="flex-wrap: wrap; max-width: 550; padding: 0 50;">
+                <h4 style="font-size: xx-large; font-family: bokor;">Partner</h4>
+                <img src="gambar/partner1.png" class="logopartner">
+                <img src="gambar/partner2.png" class="logopartner">
+                <img src="gambar/partner3.png" class="logopartner">
+                <img src="gambar/partner4.png" class="logopartner">
+                <img src="gambar/partner5.png" class="logopartner">
+                <img src="gambar/partner1.png" class="logopartner">
+                <img src="gambar/partner2.png" class="logopartner">
+                <img src="gambar/partner3.png" class="logopartner">
+                <img src="gambar/partner4.png" class="logopartner">
+                <img src="gambar/partner5.png" class="logopartner">
+            </div>
+            <div>
+                <h4 style="font-size: xx-large; font-family: bokor;">Contact</h4>
+                <p><h3 class="fa-solid fa-phone"></h3> 08805000</p>
+                <p><h3 class="fa-solid fa-envelope"></h3> customercakz@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+        <p class="bawahan" align="center">Copyright ©2024 All rights reserved | This template is made with @krysna._</p>
+</body>
+</html>
