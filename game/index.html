@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flappy Bird</title>
+  <link rel="icon" href="burung/char1/frame-1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="scoreboard">Score: 0</div>
+  <div id="highscoreboard">High Score: 0</div>
+  <div id="coinDisplay">Coins: 0</div>
+  <div id="startHint">Press SPACE or Tap to Start</div>
+
+  <div id="gameOverText">Game Over!</div>
+  <div id="finalScore"></div>
+
+  <button id="restartBtn">Restart</button>
+  <button id="shopBtn">Shop</button>
+
+  <div id="shopPanel">
+    <h2>Bird Shop</h2>
+    <div id="birdList"></div>
+    <button id="closeShopBtn">Close Shop</button>
+  </div>
+
+    <script src="game.js" defer></script>
+</body>
+</html>
